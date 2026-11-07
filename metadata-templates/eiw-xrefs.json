@@ -1,0 +1,15 @@
+{
+    "metadata": {
+    "access_right": "embargoed", 
+    "embargo_date": "2027-03-21",
+    "communities": [{"identifier": "iucn-rle"},{"identifier": "ecosystem-specific-indicatos"}],
+    "keywords": ["Ecosystem science", "Ecosystem classification"],
+    "language": "eng",
+    "license": "CC-BY-4.0",
+    "upload_type": "dataset",
+    "grants": [
+        {"id": "10.13039/501100000923::LP170101143"}, 
+        {"id": "10.13039/501100000923::LP180100159"}
+    ]
+    }
+}

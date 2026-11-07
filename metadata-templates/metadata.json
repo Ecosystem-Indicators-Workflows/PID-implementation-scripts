@@ -1,0 +1,18 @@
+{
+    "metadata": {
+    "communities": [{"identifier": "iucn-rle"}],
+    "description": "<p>This dataset includes the current version of the indicative distribution maps and profiles for <strong>Ecosystem Functional Groups</strong> - Level 3 of IUCN Global Ecosystem Typology (v2.1). Please refer to Keith <em>et al.</em> (2020) and Keith <em>et al.</em> (2022).</p>\n\n<p>The descriptive profiles provide brief summaries of key ecological traits and processes for each functional group of ecosystems to enable any ecosystem type to be assigned to a group.</p>\n\n<p>Maps are indicative of global distribution patterns are not intended to represent fine-scale patterns. The maps show areas of the world containing major (value of 1, coloured red) or minor occurrences (value of 2, coloured yellow) of each ecosystem functional group. Minor occurrences are areas where an ecosystem functional group is scattered in patches within matrices of other ecosystem functional groups or where they occur in substantial areas, but only within a segment of a larger region. Most maps were prepared using a coarse-scale template (e.g. ecoregions), but some were compiled from higher resolution spatial data where available (see details in profiles). Higher resolution mapping is planned in future publications.</p>\n\n<p>We emphasise that spatial representation of Ecosystem Functional Groups does not follow higher-order groupings described in respective ecoregion classifications. Consequently, when Ecosystem Functional Groups are aggregated into<strong> functional biomes</strong> (Level 2 of the Global Ecosystem Typology), spatial patterns may differ from those of biogeographic biomes. Differences reflect the distinctions between functional and biogeographic interpretations of the term, &ldquo;biome&rdquo;.</p>",
+    "keywords": ["Ecosystem science", "Ecosystem classification", "Functional biomes", "Earth sciences", "Human impact", "Life sciences", "Biodiversity conservation", "Ecosystem services", "Ecosystem management", "Ecosystem assembly", "Aichi targets", "Ecosystem Functional Groups", "Ecosystem traits", "Ecosystem types"],
+    "language": "eng",
+    "license": "CC-BY-4.0",
+    "notes": "The PLuS Alliance supported a workshop in London to initiate development. DAK, EN, RTK, JRFP, JAR &amp; NJM were supported by ARC Linkage Grants LP170101143 and LP180100159 and the MAVA Foundation. The IUCN Commission on Ecosystem Management supported travel for DAK to present aspects of the research to peers and stakeholders at International Congresses on Conservation Biology in 2017 and 2019, and at meetings in Africa, the middle east and Europe.",
+    "publication_date": "2021-07-05",
+    "title": "Indicative distribution maps for Ecosystem Functional Groups - Level 3 of IUCN Global Ecosystem Typology",
+    "upload_type": "dataset",
+    "version": "2.1.1",
+    "access_right":"open",
+    "creators": [],
+    "contributors": [],
+    "related_identifiers":[{"identifier": "10.2305/IUCN.CH.2020.13.en", "relation": "isSupplementTo", "resource_type": "publication-book", "scheme": "doi"}]
+    }
+}

@@ -16,12 +16,26 @@
 library(httr2)
 library(jsonlite)
 
-here::i_am("inc/zenodo-fetch-metadata.R")
+here::i_am("R/zenodo-fetch-metadata.R")
 readRenviron("~/.Renviron")
-out_dir <- here::here("output-best-candidate")
+out_dir <- here::here("metadata-examples")
+if (!dir.exists(out_dir)) {
+  dir.create(out_dir, recursive = TRUE)
+}
+
+args <- commandArgs(trailingOnly = TRUE)
+if (length(args) == 0) {
+  deposit_id <- Sys.getenv("ZENODO_DEPOSIT_ID", unset = "")
+  message(
+    "No argument supplied; trying to find deposit_id in the environment variables\n"
+  )
+} else {
+  deposit_id <- args[1]
+}
+
 
 ## 1. Environment & authentication setup
-zenodo_env  <- tolower(Sys.getenv("ZENODO_ENV", unset = "sandbox"))
+zenodo_env <- tolower(Sys.getenv("ZENODO_ENV", unset = "sandbox"))
 use_sandbox <- zenodo_env != "production"
 
 base_url <- if (use_sandbox) {
@@ -31,23 +45,25 @@ base_url <- if (use_sandbox) {
 }
 
 token_var <- if (use_sandbox) "ZENODO_SANDBOX_TOKEN" else "ZENODO_TOKEN"
-token     <- Sys.getenv(token_var)
+token <- Sys.getenv(token_var)
 
 if (!nzchar(token)) {
   stop(
     sprintf(
       "Missing API token: environment variable `%s` is not set.\nAdd `%s=\"...\"` to ~/.Renviron.",
-      token_var, token_var
+      token_var,
+      token_var
     ),
     call. = FALSE
   )
 }
 
-deposit_id <- Sys.getenv("ZENODO_DEPOSIT_ID", unset = "")
-
 ## 2. If no ZENODO_DEPOSIT_ID is given, find the latest deposit in the account
 if (!nzchar(deposit_id)) {
-  cat(sprintf("No ZENODO_DEPOSIT_ID specified; querying latest deposit on %s...\n", toupper(zenodo_env)))
+  cat(sprintf(
+    "No ZENODO_DEPOSIT_ID specified; querying latest deposit on %s...\n",
+    toupper(zenodo_env)
+  ))
   deps <- request(paste0(base_url, "/deposit/depositions")) |>
     req_auth_bearer_token(token) |>
     req_perform() |>
@@ -57,7 +73,11 @@ if (!nzchar(deposit_id)) {
     stop("No deposits found in this Zenodo account.", call. = FALSE)
   }
   deposit_id <- as.character(deps[[1]]$id)
-  cat(sprintf("Found latest deposit ID: %s ('%s')\n", deposit_id, deps[[1]]$title %||% ""))
+  cat(sprintf(
+    "Found latest deposit ID: %s ('%s')\n",
+    deposit_id,
+    deps[[1]]$title %||% ""
+  ))
 }
 
 ## 3. Fetch legacy deposit representation (/api/deposit/depositions/{id})
@@ -83,7 +103,13 @@ rdm_draft <- tryCatch(
 )
 
 if (!is.null(rdm_draft)) {
-  rdm_path <- file.path(out_dir, sprintf("zenodo-inveniordm-draft-%s.json", deposit_id))
+  rdm_path <- file.path(
+    out_dir,
+    sprintf("zenodo-inveniordm-draft-%s.json", deposit_id)
+  )
   write_json(rdm_draft, rdm_path, auto_unbox = TRUE, pretty = TRUE)
-  cat(sprintf("✔ Saved full InvenioRDM draft JSON (including Web UI funding/custom fields) to:\n  %s\n", rdm_path))
+  cat(sprintf(
+    "✔ Saved full InvenioRDM draft JSON (including Web UI funding/custom fields) to:\n  %s\n",
+    rdm_path
+  ))
 }

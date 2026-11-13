@@ -4,6 +4,8 @@
 vendor*
 composer*
 test.*
+*air.toml
+.vscode
 
 # History files
 .Rhistory

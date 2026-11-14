@@ -1,0 +1,263 @@
+{
+  "created": "2026-11-13T20:34:59.748538+00:00",
+  "modified": "2026-11-14T00:23:15.555825+00:00",
+  "id": 24207312,
+  "conceptrecid": "24207311",
+  "metadata": {
+    "title": "Cross-referencing Western Australia's vegetation associations to the IUCN Global Ecosystem Typology: 90m Best-Candidate Spatial Synthesis",
+    "publication_date": "2026-11-14",
+    "description": "<p>This dataset provides a 90 m spatial synthesis and tabular lookup cross-referencing Western Australia's vegetation associations from a statewide vegetation map (<strong>DPIRD 006<\/strong>; 1564 vegetation associations across Western Australia) to Level 3 Ecosystem Functional Groups (EFGs) of the <strong>IUCN Global Ecosystem Typology (IUCN GET)<\/strong>. <\/p>\n\n<p>Cross-referencing relationships were established by 2 domain experts across 3 rounds of structured expert elicitation using fuzzy membership values. This package provides the synthesised <strong>best-candidate ('winner-takes-all')<\/strong> spatial layers from Round 3 (1564 eligible vegetation associations units mapped to 23 IUCN GET Ecosystem Functional Groups, along with pixel-level membership proportions, number of supporting interpreters, tabular cross-reference tables, and GIS styling files.<\/p>\n\n<p><strong>Attribution requirement:<\/strong> Spatial layers are derived from pre-European vegetation mapping of Western Australia (DPIRD-006) from <a href=\"https://catalogue.data.wa.gov.au\">dataWA<\/a> &copy;State of Western Australia, Department of Primary Industries and Regional Development. (CC BY 4.0).<\/p>",
+    "access_right": "embargoed",
+    "embargo_date": "2027-06-01",
+    "creators": [
+      {
+        "name": "Ferrer-Paris, J. R.",
+        "affiliation": "Centre for Ecosystem Science, UNSW Sydney; IUCN Commission on Ecosystem Management",
+        "orcid": "0000-0002-9554-3395"
+      },
+      {
+        "name": "Tozer, Mark G.",
+        "affiliation": "Centre for Ecosystem Science, UNSW Sydney"
+      },
+      {
+        "name": "Keith, David A.",
+        "affiliation": "Centre for Ecosystem Science, UNSW Sydney; IUCN Commission on Ecosystem Management"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Gould, Elliot",
+        "affiliation": "University of New South Wales , School of Biological, Earth and Environmental Sciences",
+        "type": "ProjectMember",
+        "orcid": "0000-0002-6585-538X"
+      },
+      {
+        "name": "Singh, Abhimanyu Raj",
+        "affiliation": "QCIF Ltd.",
+        "type": "ProjectMember",
+        "orcid": "0000-0002-2279-7060"
+      }
+    ],
+    "keywords": [
+      "IUCN Global Ecosystem Typology",
+      "Ecosystem Functional Groups",
+      "cross-referencing",
+      "vegetation mapping",
+      "expert elicitation",
+      "fuzzy membership",
+      "GeoTIFF",
+      "Global Ecosystems Atlas",
+      "Ecosystem Indicators Workflows",
+      "Western Australia"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "10.1038/s41586-022-05318-4",
+        "relation": "cites",
+        "resource_type": "publication-article",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.2305/CPPC6126",
+        "relation": "cites",
+        "resource_type": "publication-book",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "https://w3id.org/iucn-get/IUCNEcosystemTypology",
+        "relation": "cites",
+        "resource_type": "other",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://github.com/Ecosystem-Indicators-Workflows/WAVSA-XREF",
+        "relation": "isDerivedFrom",
+        "resource_type": "software",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://catalogue.data.wa.gov.au/en/dataset/pre-european-dpird-006",
+        "relation": "isDerivedFrom",
+        "resource_type": "dataset",
+        "scheme": "url"
+      }
+    ],
+    "version": "0.1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": false,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "24207311"
+          }
+        }
+      ]
+    },
+    "notes": "This work was supported by the ARC Industry Laureate Fellowship Project 'Foundations for leading the nature positive ecosystem conservation agenda' (IL240100030) led by Professor David Keith at UNSW Sydney, and the Ecosystem Indicators Workflows (EIW) project, a co-investment partnership with the Australian Research Data Commons (ARDC). The ARDC is enabled by the National Collaborative Research Infrastructure Strategy (NCRIS). Source spatial data: pre-European vegetation mapping of Western Australia (DPIRD-006) from dataWA ©State of Western Australia, Department of Primary Industries and Regional Development (CC BY 4.0)."
+  },
+  "title": "Cross-referencing Western Australia's vegetation associations to the IUCN Global Ecosystem Typology: 90m Best-Candidate Spatial Synthesis",
+  "links": {
+    "self": "https://zenodo.org/api/records/24207312/draft",
+    "self_html": "https://zenodo.org/uploads/24207312",
+    "preview_html": "https://zenodo.org/records/24207312?preview=1",
+    "reserve_doi": "https://zenodo.org/api/records/24207312/draft/pids/doi",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/draft:24207312/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/draft:24207312/sequence/default",
+    "files": "https://zenodo.org/api/records/24207312/draft/files",
+    "media_files": "https://zenodo.org/api/records/24207312/draft/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:24207312:DPIRD-xref-membership.tiff/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:24207312:DPIRD-xref-membership.tiff/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:24207312:DPIRD-xref-membership.tiff/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:24207312:DPIRD-xref-membership.tiff/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:24207312:DPIRD-xref-membership.tiff/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:24207312:DPIRD-xref-membership.tiff/full/%5E1200,/0/default.jpg"
+    },
+    "versions": "https://zenodo.org/api/records/24207312/versions",
+    "record": "https://zenodo.org/api/records/24207312",
+    "record_html": "https://zenodo.org/records/24207312",
+    "publish": "https://zenodo.org/api/records/24207312/draft/actions/publish",
+    "review": "https://zenodo.org/api/records/24207312/draft/review",
+    "submit-review": "https://zenodo.org/api/records/24207312/draft/actions/submit-review",
+    "access_links": "https://zenodo.org/api/records/24207312/access/links",
+    "access_grants": "https://zenodo.org/api/records/24207312/access/grants",
+    "access_users": "https://zenodo.org/api/records/24207312/access/users",
+    "access_request": "https://zenodo.org/api/records/24207312/access/request",
+    "access": "https://zenodo.org/api/records/24207312/access",
+    "communities": "https://zenodo.org/api/records/24207312/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/24207312/communities-suggestions",
+    "quota_increase": "https://zenodo.org/api/records/24207312/quota-increase",
+    "requests": "https://zenodo.org/api/records/24207312/requests"
+  },
+  "updated": "2026-11-14T00:23:15.555825+00:00",
+  "recid": "24207312",
+  "revision": 14,
+  "files": [
+    {
+      "id": "a56378bd-2851-4dbc-ae97-a959f1d4cad9",
+      "key": "datapackage.json",
+      "size": 9967,
+      "checksum": "md5:dfe7efd1cf52cb9653ed4334713bd45d",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/datapackage.json/content"
+      }
+    },
+    {
+      "id": "eaf2d863-4738-4ea2-8843-b82b395edd19",
+      "key": "DPIRD-xref-target.qml",
+      "size": 3623,
+      "checksum": "md5:34cda604330599ba638451a3e7f24bcb",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/DPIRD-xref-target.qml/content"
+      }
+    },
+    {
+      "id": "d1af2bd6-0f2e-4c4f-a605-2f2d78f55904",
+      "key": "DPIRD-xref-target.tiff.aux.xml",
+      "size": 8130,
+      "checksum": "md5:483d72f2b3a0b6ab4aee6edbf124a07d",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/DPIRD-xref-target.tiff.aux.xml/content"
+      }
+    },
+    {
+      "id": "45ab8a57-6ad1-41af-b6da-e49a527b522d",
+      "key": "IUCN-GET-pixel-lookup.csv",
+      "size": 2689,
+      "checksum": "md5:8ccad6da19ee68eafa1ea9f3eb3f74b8",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/IUCN-GET-pixel-lookup.csv/content"
+      }
+    },
+    {
+      "id": "4633bbb7-81f4-469f-acce-c11c99f4d355",
+      "key": "README.qmd",
+      "size": 20993,
+      "checksum": "md5:963c94e15d9d5b1617a45c8aa2b96c4a",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/README.qmd/content"
+      }
+    },
+    {
+      "id": "51ee3b74-2d65-471c-8ba1-eb46bb2f01d8",
+      "key": "LICENSE",
+      "size": 2986,
+      "checksum": "md5:5764e675f714851e79cca1b7076ec07f",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/LICENSE/content"
+      }
+    },
+    {
+      "id": "3438b7a8-fe79-4c5a-b659-de93ed693db9",
+      "key": "README.md",
+      "size": 20391,
+      "checksum": "md5:744f55fd51462ac95d995825ff9d249e",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/README.md/content"
+      }
+    },
+    {
+      "id": "8310d2b7-9bdb-41b9-a17a-aa2372e787f0",
+      "key": "DPIRD-xref-membership.tiff",
+      "size": 88021560,
+      "checksum": "md5:db11dfb1978d5b39d20b9c06feba0a08",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/DPIRD-xref-membership.tiff/content"
+      }
+    },
+    {
+      "id": "c08357c7-2a45-4610-8b8e-452f941a5ac4",
+      "key": "DPIRD-xref-target.tiff",
+      "size": 13936728,
+      "checksum": "md5:93f55158188a639d1c3698653bcdc8f6",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/DPIRD-xref-target.tiff/content"
+      }
+    },
+    {
+      "id": "db501d75-9793-4d57-b87e-eb0f00e23744",
+      "key": "DPIRD-xref-best-candidate.csv",
+      "size": 341372,
+      "checksum": "md5:622cb01bd892f967e3a8bb4210b8e152",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/DPIRD-xref-best-candidate.csv/content"
+      }
+    },
+    {
+      "id": "a02d1dcc-2370-426c-8df0-9346a2b7edd8",
+      "key": "DPIRD-xref-supporting.tiff",
+      "size": 42257430,
+      "checksum": "md5:86fbda608f6433c2fc78ce5987ff95db",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/DPIRD-xref-supporting.tiff/content"
+      }
+    },
+    {
+      "id": "b80d57bc-c9ab-461d-b0a3-797f8a8b55b7",
+      "key": "DPIRD-xref-target.clr",
+      "size": 1260,
+      "checksum": "md5:a29d9c504ecd76f3a4273300fef88e40",
+      "links": {
+        "self": "https://zenodo.org/api/records/24207312/draft/files/DPIRD-xref-target.clr/content"
+      }
+    }
+  ],
+  "owners": [
+    {
+      "id": "13713"
+    }
+  ],
+  "status": "draft",
+  "state": "unsubmitted",
+  "submitted": false
+}

@@ -11,7 +11,7 @@
 ## > Fetch the most recently modified draft from Sandbox (if ZENODO_DEPOSIT_ID is omitted):
 ##   Rscript inc/zenodo-fetch-metadata.R
 ## > Fetch from Production Zenodo:
-##   ZENODO_ENV=production ZENODO_DEPOSIT_ID=1234567 Rscript inc/zenodo-fetch-metadata.R
+##   ZENODO_ENV=production R --vanilla < R/zenodo-fetch-metadata.R --args 24207312
 
 library(httr2)
 library(jsonlite)

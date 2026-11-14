@@ -26,9 +26,8 @@
 library(httr2)
 library(jsonlite)
 
-here::i_am("inc/zenodo-upload-draft.R")
 readRenviron("~/.Renviron")
-out_dir <- here::here("output-best-candidate")
+out_dir <- getwd()
 
 ## 1. Environment & authentication setup
 zenodo_env <- tolower(Sys.getenv("ZENODO_ENV", unset = "sandbox"))
@@ -156,18 +155,16 @@ if (!is.null(meta$embargo_date)) {
 }
 
 ## 4. Upload dataset and documentation files into the draft bucket
+datapkg_meta <- fromJSON(file.path(out_dir, "datapackage.json"))
+
+pkg_files <- datapkg_meta$resources[[2]]
+
 files_to_upload <- c(
   "README.md",
   "README.qmd",
   "LICENSE",
   "datapackage.json",
-  "TASVEG-xref-target.tiff",
-  "TASVEG-xref-membership.tiff",
-  "TASVEG-xref-supporting.tiff",
-  "TASVEG-xref-best-candidate.csv",
-  "IUCN-GET-pixel-lookup.csv",
-  "TASVEG-xref-target.qml",
-  "TASVEG-xref-target.clr"
+  pkg_files
 )
 
 missing_files <- files_to_upload[
@@ -175,7 +172,7 @@ missing_files <- files_to_upload[
 ]
 if (length(missing_files) > 0) {
   stop(
-    "Missing expected files in output-best-candidate/: ",
+    "Missing expected files in current folder/: ",
     paste(missing_files, collapse = ", "),
     call. = FALSE
   )

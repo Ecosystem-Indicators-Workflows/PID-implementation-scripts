@@ -1,0 +1,36 @@
+{
+    "Organization": [
+        {
+            "code": "ces",
+            "name": "Centre for Ecosystem Science, UNSW Sydney"
+        },
+        {
+            "code": "iucn",
+            "name": "IUCN Commission on Ecosystem Management"
+        },
+        {
+            "code": "ardc",
+            "name":"Australian Research Data Commons",
+            "@id": "https://ror.org/038sjwq14"
+        }
+    ],
+    "Person": [
+        {
+            "@id": "0000-0002-9554-3395",
+            "affiliations": [
+                "ces",
+                "iucn"
+            ],
+            "familyName": "Ferrer-Paris",
+            "givenName": "J. R."
+        },
+        {
+            "@id": "0000-0002-7373-0077",
+            "affiliations": [
+                "ces"
+            ],
+            "familyName": "Tozer",
+            "givenName": "Mark G."
+        }
+    ]
+}

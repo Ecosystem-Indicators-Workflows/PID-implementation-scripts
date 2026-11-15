@@ -5,32 +5,79 @@
             "name": "Centre for Ecosystem Science, UNSW Sydney"
         },
         {
-            "code": "iucn",
-            "name": "IUCN Commission on Ecosystem Management"
+            "code": "iucn-cem",
+            "name": "IUCN Commission on Ecosystem Management",
+            "@id": "https://ror.org/00ybvyr04"
         },
         {
+            "@id": "https://ror.org/038sjwq14",
             "code": "ardc",
-            "name":"Australian Research Data Commons",
-            "@id": "https://ror.org/038sjwq14"
+            "name": "Australian Research Data Commons"
+        },
+        {
+            "@id": "https://ror.org/03r8z3t63",
+            "code": "unsw",
+            "name": "UNSW Sydney"
+        },
+        {
+          "code": "jcu",
+          "name": "James Cook University"
+        },
+        {
+          "code": "qcif",
+          "name": "QCIF"
         }
-    ],
+      ],
     "Person": [
         {
-            "@id": "0000-0002-9554-3395",
+            "@id": "https://orcid.org/0000-0002-9554-3395",
             "affiliations": [
                 "ces",
-                "iucn"
+                "iucn-cem"
             ],
             "familyName": "Ferrer-Paris",
             "givenName": "J. R."
         },
         {
-            "@id": "0000-0002-7373-0077",
+            "@id": "https://orcid.org/0000-0002-7373-0077",
             "affiliations": [
                 "ces"
             ],
             "familyName": "Tozer",
             "givenName": "Mark G."
-        }
+        },
+        {
+            "@id": "https://orcid.org/0000-0002-7627-4150",
+            "affiliations": [
+                "ces",
+                "iucn-cem"
+            ],
+            "familyName": "Keith",
+            "givenName": "David"
+        },
+        {
+      "@id": "https://orcid.org/0000-0002-4806-9205",
+      "affiliations": [
+        "jcu"
+      ],
+      "familyName": "Addicott",
+      "givenName": "Eda"
+    }, {
+      "@id": "https://orcid.org/0000-0002-6585-538X",
+      "affiliations": [
+                "ces"
+            ],
+      "familyName": "Gould",
+      "givenName": "Elliot"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2279-7060",
+      "affiliations": [
+                "ces",
+                "qcif"
+            ],
+      "familyName": "Singh",
+      "givenName": "Abhimanyu Raj"
+    }
     ]
 }

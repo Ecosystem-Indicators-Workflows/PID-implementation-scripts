@@ -46,3 +46,7 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Python bytecode
+__pycache__/
+*.py[cod]
